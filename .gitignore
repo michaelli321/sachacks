@@ -60,3 +60,4 @@
 # Ignore uploaded files in development
 /website/storage/*
 /website/!/storage/.keep
+.DS_Store
