@@ -1,0 +1,62 @@
+/website/*.rbc
+/website/capybara-*.html
+/website/.rspec
+/website/log
+/website/tmp
+/website/db/*.sqlite3
+/website/db/*.sqlite3-journal
+/website/public/system
+/website/coverage/
+/website/spec/tmp
+/website/*.orig
+/website/rerun.txt
+/website/pickle-email-*.html
+
+# TODO Comment out this rule if you are OK with secrets being uploaded to the repo
+/website/config/initializers/secret_token.rb
+/website/config/master.key
+
+# Only include if you have production secrets in this file, which is no longer a Rails default
+# config/secrets.yml
+
+# dotenv
+# TODO Comment out this rule if environment variables can be committed
+/website/.env
+
+## Environment normalization:
+/website/.bundle
+/website/vendor/bundle
+
+# these should all be checked in to normalize the environment:
+# Gemfile.lock, .ruby-version, .ruby-gemset
+
+# unless supporting rvm < 1.11.0 or doing something fancy, ignore this:
+/website.rvmrc
+
+# if using bower-rails ignore default bower_components path bower.json files
+/website/vendor/assets/bower_components
+/website*.bowerrc
+/website/bower.json
+
+# Ignore pow environment settings
+/website/.powenv
+
+# Ignore Byebug command history file.
+/website/.byebug_history
+
+# Ignore node_modules
+/website/node_modules/
+
+# Ignore precompiled javascript packs
+/website/public/packs
+/website/public/packs-test
+/website/public/assets
+
+# Ignore yarn files
+/website/yarn-error.log
+/website/yarn-debug.log*
+/website/.yarn-integrity
+
+# Ignore uploaded files in development
+/website/storage/*
+/website/!/storage/.keep
