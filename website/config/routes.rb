@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+	root 'application#index'
+	get 'index' => 'application#index'
+	get 'about' => 'application#about'
+	get 'data' => 'application#data'
+	get 'models' => 'application#models'
 end
