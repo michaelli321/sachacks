@@ -5,9 +5,15 @@ class ApplicationController < ActionController::Base
 	def about
 	end
 
-	def data
+	def dataset
+	end
+
+	def insights
 	end
 
 	def models
+	end
+
+	def final
 	end
 end
