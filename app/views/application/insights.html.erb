@@ -140,6 +140,398 @@ $(document).ready(function () {
 <p>The graph above detailing Power Forward archetypes is interesting for several reasons. First, we can determine that Power Forwards with the “Rebounding Athletic Finisher” archetype generate the most points, both through assists and raw shots. Second, we notice that the “Sharpschooting Slasher” archetypes impact the game through their ability to score three-pointers, rather than their ability to create scoring opportunities for others.</p>
 </div>
 
+<h1>Matchups</h1>
+<p>After seeing the possibility of the mixing and meshing of player archetypes, we decided to look at which archetypes were the best at defending which archetypes. </p>
+
+<h3>Point Guards</h3>
+<p>From the data it was clear that the Shot-Creating Sharpshooter had a defensive edge over the Sharpshooting Playmaker archetype. </p>
+<table class="table">
+	<colgroup>
+	    <col span="2" class="success">
+	</colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Archetype Guarding Archetype</th>
+      <th scope="col">Opponent FG%</th>
+      <th scope="col">Forced Turnovers</th>
+      <th scope="col">Allowed Points</th>
+      <th scope="col">Steals</th>
+      <th scope="col">Blocks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sharpshooting Playmakers -> Shot-Creating Sharpshooters</th>
+      <td>53%</td>
+      <td>2.75</td>
+      <td bgcolor="#0CD8F4">21</td>
+      <td>1.75</td>
+      <td>.25</td>
+    </tr>
+    <tr>
+      <td>Sharpshooting Playmakers -> Sharpshooting Playmakers</th>
+      <td>46%</td>
+      <td>3.33</td>
+      <td bgcolor="#0CD8F4">15.33</td>
+      <td>2.33</td>
+      <td>.083</td>
+    </tr>
+    <tr>
+      <td>Shot-Creating Sharpshooters -> Sharpshooting Playmakers</th>
+      <td>35%</td>
+      <td>2.75</td>
+      <td bgcolor="#0CD8F4">12</td>
+      <td>2</td>
+      <td>.5</td>
+    </tr>
+    <tr>
+      <td>Shot-Creating Sharpshooters -> Shot-Creating Sharpshooters</th>
+      <td>46%</td>
+      <td>3.33</td>
+      <td bgcolor="#0CD8F4">15.33</td>
+      <td>2.33</td>
+      <td>.083</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Shooting Guards</h3>
+<p>There did not seem to be any apparent defensive advantages regarding matchups between Shooting Guards.</p>
+<table class="table">
+	<colgroup>
+	    <col span="2" class="success">
+	</colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Archetype Guarding Archetype</th>
+      <th scope="col">Opponent FG%</th>
+      <th scope="col">Forced Turnovers</th>
+      <th scope="col">Allowed Points</th>
+      <th scope="col">Steals</th>
+      <th scope="col">Blocks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pure Sharpshooters -> Pure Sharpshooters</th>
+      <td>58%</td>
+      <td>.5</td>
+      <td bgcolor="#0CD8F4">10.1</td>
+      <td>.5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Pure Sharpshooters -> Sharpshooting Defender</th>
+      <td>56%</td>
+      <td>0</td>
+      <td bgcolor="#0CD8F4">13.5</td>
+      <td>.5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sharpshooting Defender -> Pure Sharpshooters</th>
+      <td>56%</td>
+      <td>.5</td>
+      <td bgcolor="#0CD8F4">10.5</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Small Forwards</h3>
+<p>As seen, this class was much more spread out, and due to this some matchups only had one sample (indicated by the red rows). However, from this, we can see that there are slight advantages to play certain archetypes against another. For example, Shot-Creating Slasher guarding a Sharpshooting Shot Creator allows less points and much lower field goal percentage compared to if a Pure Sharpshooter was guarding them.</p>
+<table class="table">
+	<colgroup>
+	    <col span="2" class="success">
+	</colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Archetype Guarding Archetype</th>
+      <th scope="col">Opponent FG%</th>
+      <th scope="col">Forced Turnovers</th>
+      <th scope="col">Allowed Points</th>
+      <th scope="col">Steals</th>
+      <th scope="col">Blocks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shot-Creating Slasher -> Sharpshooting Shot Creator</th>
+      <td>40%</td>
+      <td>1</td>
+      <td bgcolor="#0CD8F4">7</td>
+      <td>1.5</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Shot-Creating Slasher -> Shot-Creating Slasher</th>
+      <td>79%</td>
+      <td>2</td>
+      <td bgcolor="#0CD8F4">26</td>
+      <td>3</td>
+      <td>.67</td>
+    </tr>
+    <tr>
+      <td>Sharpshooting Slasher -> Slashing Defender</th>
+      <td>50%</td>
+      <td>2</td>
+      <td bgcolor="#0CD8F4">16</td>
+      <td>1.33</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sharpshooting Slasher -> Shot-Creating Slasher</th>
+      <td>66%</td>
+      <td>4.25</td>
+      <td bgcolor="#0CD8F4">29</td>
+      <td>1.75</td>
+      <td>.75</td>
+    </tr>
+    <tr>
+      <td>Sharpshooting Slasher -> Pure Sharpshooter</th>
+      <td>65%</td>
+      <td>.25</td>
+      <td bgcolor="#0CD8F4">12.5</td>
+      <td>.25</td>
+      <td>0</td>
+    </tr>
+    <tr bgcolor="red">
+      <td>Sharpshooting Slasher -> Sharpshooting Shot Creator</th>
+      <td>64%</td>
+      <td>0</td>
+      <td bgcolor="#0CD8F4">21</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Slashing Defender -> Pure Sharpshooter</th>
+      <td>65%</td>
+      <td>.33</td>
+      <td bgcolor="#0CD8F4">15.7</td>
+      <td>1.33</td>
+      <td>.33</td>
+    </tr>
+    <tr bgcolor="red">
+      <td>Slashing Defender -> Shot-Creating Slasher</th>
+      <td>87%</td>
+      <td>5</td>
+      <td bgcolor="#0CD8F4">28</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr bgcolor="red">
+      <td>Sharpshooting Shot Creator -> Slashing Defender</th>
+      <td>57%</td>
+      <td>3</td>
+      <td bgcolor="#0CD8F4">18</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr bgcolor="red">
+      <td>Sharpshooting Shot Creator -> Shot-Creating Slasher</th>
+      <td>71%</td>
+      <td>3</td>
+      <td bgcolor="#0CD8F4">25</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Pure Sharpshooter -> Sharpshooting Shot Creator</th>
+      <td>69%</td>
+      <td>2.5</td>
+      <td bgcolor="#0CD8F4">12</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr bgcolor="red">
+      <td>Pure Sharpshooter -> Shot-Creating Slasher</th>
+      <td>50%</td>
+      <td>0</td>
+      <td bgcolor="#0CD8F4">18</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr bgcolor="red">
+      <td>Pure Sharpshooter -> Pure Sharpshooter</th>
+      <td>80%</td>
+      <td>0</td>
+      <td bgcolor="#0CD8F4">11</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Power Forwards</h3>
+<p>The data here is a little more sparse, as we do not have various archetypes with an adequate amount of data guarding a single archetype, thus we are unable to make comparisons here. However, we see that the Sharpshooting Rim Protector is a great defensive mathchup on the Slashing Rim Protector.</p>
+<table class="table">
+	<colgroup>
+	    <col span="2" class="success">
+	</colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Archetype Guarding Archetype</th>
+      <th scope="col">Opponent FG%</th>
+      <th scope="col">Forced Turnovers</th>
+      <th scope="col">Allowed Points</th>
+      <th scope="col">Steals</th>
+      <th scope="col">Blocks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr bgcolor="red">
+      <td>Slashing Rim Protector -> Rebounding Athletic Finisher</th>
+      <td>64%</td>
+      <td>2</td>
+      <td bgcolor="#0CD8F4">19</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr bgcolor="red">
+      <td>Slashing Rim Protector -> Sharpshooting Rim Protector</th>
+      <td>57%</td>
+      <td>0</td>
+      <td bgcolor="#0CD8F4">11</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr bgcolor="red">
+      <td>Rebounding Athletic Finisher -> Slashing Rim Protector</th>
+      <td>57%</td>
+      <td>1</td>
+      <td bgcolor="#0CD8F4">14</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Rebounding Athletic Finisher -> Sharpshooting Rim Protector</th>
+      <td>72%</td>
+      <td>.67</td>
+      <td bgcolor="#0CD8F4">8</td>
+      <td>1.33</td>
+      <td>1.33</td>
+    </tr>
+    <tr bgcolor="red">
+      <td>Sharpshooting Rim Protector -> Sharpshooting Rim Protector</th>
+      <td>48%</td>
+      <td>.9</td>
+      <td bgcolor="#0CD8F4">7.1</td>
+      <td>.95</td>
+      <td>.45</td>
+    </tr>
+    <tr>
+      <td>Sharpshooting Rim Protector -> Rebounding Athletic Finisher</th>
+      <td>57%</td>
+      <td>1.67</td>
+      <td bgcolor="#0CD8F4">12</td>
+      <td>.67</td>
+      <td>2.33</td>
+    </tr>
+    <tr>
+      <td>Sharpshooting Rim Protector -> Slashing Rim Protector</th>
+      <td>43%</td>
+      <td>0</td>
+      <td bgcolor="#0CD8F4">6</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3>Centers</h3>
+<p>We see the same trends as the small forward class. Certain archetypes are more geared to guard others. For example, a Slashing Rebounder does a much better job guarding a Slashing Stretch 5 as opposed to a Slashing Stretch 5 guarding another.</p>
+<table class="table">
+	<colgroup>
+	    <col span="2" class="success">
+	</colgroup>
+  <thead>
+    <tr>
+      <th scope="col">Archetype Guarding Archetype</th>
+      <th scope="col">Opponent FG%</th>
+      <th scope="col">Forced Turnovers</th>
+      <th scope="col">Allowed Points</th>
+      <th scope="col">Steals</th>
+      <th scope="col">Blocks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rebounding Post Scorer -> Rebounding Post Scorer</th>
+      <td>50%</td>
+      <td>.5</td>
+      <td bgcolor="#0CD8F4">7</td>
+      <td>.5</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Rebounding Post Scorer -> Slashing Rebounder</th>
+      <td>62%</td>
+      <td>.5</td>
+      <td bgcolor="#0CD8F4">24</td>
+      <td>.5</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>Slashing Rebounder -> Slashing Rebounder</th>
+      <td>72%</td>
+      <td>1.8</td>
+      <td bgcolor="#0CD8F4">20.1</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Slashing Rebounder -> Rebounding Post Scorer</th>
+      <td>49%</td>
+      <td>1</td>
+      <td bgcolor="#0CD8F4">19.5</td>
+      <td>.5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Slashing Rebounder -> Slashing Stretch 5</th>
+      <td>50%</td>
+      <td>.5</td>
+      <td bgcolor="#0CD8F4">7.5</td>
+      <td>1</td>
+      <td>.5</td>
+    </tr>
+    <tr bgcolor="red">
+      <td>Slashing Rebounder -> Pure Rim Protector</th>
+      <td>63%</td>
+      <td>1</td>
+      <td bgcolor="#0CD8F4">21</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Slashing Stretch 5 -> Slashing Stretch 5</th>
+      <td>83%</td>
+      <td>.5</td>
+      <td bgcolor="#0CD8F4">14.5</td>
+      <td>1</td>
+      <td>.5</td>
+    </tr>
+    <tr>
+      <td>Slashing Stretch 5 -> Slashing Rebounder</th>
+      <td>70%</td>
+      <td>2</td>
+      <td bgcolor="#0CD8F4">23.5</td>
+      <td>0</td>
+      <td>2.5</td>
+    </tr>
+    <tr bgcolor="red">
+      <td>Pure Rim Protector -> Slashing Stretch 5</th>
+      <td>88%</td>
+      <td>2</td>
+      <td bgcolor="#0CD8F4">15</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+
 
 
 
